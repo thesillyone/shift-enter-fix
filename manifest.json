@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Shift+Enter Comment Fix",
+    "version": "1.0",
+    "description": "Prevents Shift+Enter from sending comments and instead inserts a newline.",
+    "content_scripts": [
+      {
+        "matches": ["https://play.worols.com/*"],
+        "js": ["content-script.js"]
+      }
+    ],
+    "icons": {
+      "48": "icon.png" 
+    }
+  }
